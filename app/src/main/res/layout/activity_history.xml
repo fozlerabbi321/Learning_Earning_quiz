@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".HistoryActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/mmmm"
+        android:background="#153C5C"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnhistorycasht"
+            android:layout_centerVertical="true"
+            android:layout_width="123dp"
+            android:layout_height="80dp"
+            android:text="CashOut"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:textSize="25dp"
+            android:background="@drawable/cashouts"
+            />
+        <Button
+            android:id="@+id/btnhistoryhistory"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="123dp"
+            android:text="History"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:textSize="25dp"
+            android:layout_height="80dp"
+            android:background="@drawable/historys"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvhistorypoint"
+        android:text="Current Points: "
+        android:layout_below="@id/mmmm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvhislastwithdraw"
+        android:text="Last CashOut: "
+        android:layout_below="@id/tvhistorypoint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvhistotalwithdraw"
+        android:text="Total CashOut: "
+        android:layout_below="@id/tvhislastwithdraw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        />
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/hadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/bannerads">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

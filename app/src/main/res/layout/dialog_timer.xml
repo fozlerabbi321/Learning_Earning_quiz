@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:text="Warning:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:text="@string/warnign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <cn.iwgang.countdownview.CountdownView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:isHideTimeBackground="true"
+        app:isShowDay="true"
+        app:isShowHour="true"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:isTimeTextBold="true"
+        app:suffixGravity="bottom"
+        app:suffixHour="Hour"
+        app:suffixMinute="Minute"
+        app:suffixSecond="Second"
+        app:suffixTextColor="#000000"
+        app:suffixTextSize="12sp"
+        app:timeTextColor="#000000"
+        app:timeTextSize="22sp" />
+
+</LinearLayout>

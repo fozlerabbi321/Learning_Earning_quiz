@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/lerningbg"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/lnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:weightSum="3.59">
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:layout_weight=".40"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_weight=".40"
+                android:hint="Address"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:inputType="textMultiLine"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etMobile"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_weight=".40"
+                android:hint="Enter your mobile number"
+                android:inputType="phone"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_weight=".40"
+                android:hint="Enter your email address"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+
+            <EditText
+                android:id="@+id/etPass"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_weight=".40"
+                android:hint="Enter password"
+                android:inputType="textWebPassword"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etCfPass"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_weight=".40"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:hint="Confirm password"
+                android:inputType="textWebPassword"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".03" />
+
+            <EditText
+                android:id="@+id/etRef"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:layout_weight=".40"
+                android:hint="Referral No(Optional)"
+                android:inputType="textAutoCorrect"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/chSingupage"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff"
+                android:layout_weight=".30"
+                android:text="Tearms and condition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".03" />
+
+            <Button
+                android:id="@+id/ibtnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".40"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:background="#A70BE7"
+                android:text="Register"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/lnLogin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".40"
+                android:text="Already register?"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvLoginNow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".20"
+                android:text="Login"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

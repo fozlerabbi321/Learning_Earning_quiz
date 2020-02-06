@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_height="match_parent">
+ <!--   <TextView
+        android:id="@+id/textid"
+        android:textColor="#000"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="Notice From Admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+    <TextView
+        android:id="@+id/text"
+        android:visibility="visible"
+        android:textColor="#000"
+        android:text="url"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+        <TextView
+            android:id="@+id/textNotice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textIsSelectable="true"
+            android:textSize="18dp"
+            />
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#15EB9C"/>
+
+    <Button
+        android:id="@+id/btngotit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:background="#fff"
+        android:text="Got It!"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textAllCaps="false"
+        android:textColor="#15EB9C"
+        />
+</LinearLayout>

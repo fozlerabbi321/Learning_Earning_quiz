@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/lerningbg"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:text="Don't use VPN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#f20606"
+        android:textSize="15dp"
+        android:gravity="center_horizontal"
+        android:text="Please turn off your Vpn and start again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/vpnid"
+        android:textColor="#000"
+        android:background="#62f1ec"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"
+        android:textSize="20dp"
+        android:text="OK"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

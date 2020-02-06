@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:weightSum="5"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".CaswOutActivity">
+
+<RelativeLayout
+    android:layout_weight=".5"
+    android:background="#153C5C"
+    android:layout_width="250dp"
+    android:layout_gravity="center"
+    android:layout_height="0dp">
+
+    <Button
+        android:id="@+id/btnselectcahsout"
+        android:layout_centerVertical="true"
+        android:layout_width="123dp"
+        android:layout_height="80dp"
+        android:text="CashOut"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        android:background="@drawable/cashouts"
+        />
+    <Button
+        android:id="@+id/btncashistory"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="123dp"
+        android:text="History"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        android:layout_height="80dp"
+        android:background="@drawable/historys"
+    />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight=".7"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#756A6A"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:id="@+id/btncaspaymenttipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Payment Type"
+                android:textSize="22dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginLeft="6dp"
+                android:textColor="#fff"
+                android:background="#000"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <EditText
+            android:layout_marginTop="30dp"
+            android:id="@+id/etpaymenttype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Payment Type = "
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColorHint="#000"
+            android:background="#fff"
+            android:layout_marginBottom="5dp"
+            android:inputType="text"
+            android:textAllCaps="false"
+            />
+        <EditText
+            android:id="@+id/etnumberemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:textSize="25dp"
+           android:hint="Enter your number/email"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:inputType="text"
+            android:textAllCaps="false"
+            android:layout_below="@id/etpaymenttype"
+            />
+        <EditText
+            android:id="@+id/etpoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:hint="enter points"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#fff"
+            android:inputType="text"
+            android:textAllCaps="false"
+            android:layout_below="@id/etnumberemail"
+            />
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_weight=".5"
+    android:layout_width="180dp"
+    android:layout_gravity="center"
+    android:layout_height="0dp">
+    <Button
+        android:id="@+id/btncashout"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        android:text="CashOut"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/referback"
+
+        />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="1.3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/withadView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/bannerads">
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

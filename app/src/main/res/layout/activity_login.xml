@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:weightSum="12"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.6"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sign In"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="50dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <EditText
+            android:id="@+id/etCreMobile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:hint="Enter Email"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:background="#fff"
+            android:paddingLeft="10dp"
+            android:textSize="18dp" />
+        <EditText
+            android:id="@+id/etCrePass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:layout_marginRight="10dp"
+            android:background="#fff"
+            android:hint="Enter Password"
+            android:paddingLeft="10dp"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="Forgot Password ?"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/loginbtnforgot"
+            android:text="Click Now"
+            android:textAllCaps="false"
+            android:background="#05CC0B"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="Sign In"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:background="@drawable/signinbtn"
+            android:layout_gravity="center"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:text="Dont Have Account ?"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/tvSignup"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:background="#06756B"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1.4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/bannerads">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+</LinearLayout>

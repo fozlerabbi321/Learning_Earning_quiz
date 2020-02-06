@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/im"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/appiconle" />
+
+    <TextView
+        android:layout_below="@id/im"
+        android:id="@+id/t"
+        android:text="Learning &amp; Earning"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:text="Make Money Apps"
+        android:textColor="#AD9999"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:layout_below="@id/t"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_below="@id/t2"
+        android:id="@+id/wc"
+        android:textColor="#fff"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="120dp"
+        android:textSize="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To Learning &amp; Earning"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/wc"
+        />
+    <TextView
+        android:textSize="40sp"
+        android:textColor="@android:color/holo_red_light"
+        android:text="TextView"
+        android:layout_below="@id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progress"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Created By Friends Software IT"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:textColor="#fff"
+        android:padding="20dp"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

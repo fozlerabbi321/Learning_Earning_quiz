@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/navhomeid" android:title="Home"  android:icon="@drawable/home"/>
+    <item android:id="@+id/navreferid" android:title="Refer List" android:icon="@drawable/rafer"/>
+    <item android:id="@+id/navmakemoneyid" android:title="Make Money" android:icon="@drawable/makemoney"/>
+    <item android:id="@+id/navaccountid" android:title="Account Info" android:icon="@drawable/account"/>
+    <item android:id="@+id/navcashoutid" android:title="Cashout" android:icon="@drawable/cashout"/>
+    <item android:id="@+id/navyoutubeid" android:title="Youtube" android:icon="@drawable/youtube"/>
+    <item android:id="@+id/navcontctus" android:title="Contact Us" android:icon="@drawable/youtube"/>
+    <item android:id="@+id/navtelegram" android:title="Join Telegram group" android:icon="@drawable/telegram"/>
+    <item android:id="@+id/navaboutstormid" android:title="About Learning &amp; Earning" android:icon="@drawable/aboutstormcoin"/>
+    <item android:id="@+id/privacy" android:title="Privacy policy" android:icon="@drawable/privacy"/>
+    <item android:id="@+id/navexitid" android:title="Exit" android:icon="@drawable/exit"/>
+</menu>

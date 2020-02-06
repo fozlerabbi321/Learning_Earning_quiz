@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/mainnoticemenu"
+        app:showAsAction="always"
+        android:icon="@drawable/notification"
+        android:title="notice">
+
+    </item>
+    <item android:id="@+id/mainback"
+        android:title="back"
+        android:icon="@drawable/exit"
+        app:showAsAction="always"
+        >
+    </item>
+</menu>

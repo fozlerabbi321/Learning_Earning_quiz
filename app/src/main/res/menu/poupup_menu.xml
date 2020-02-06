@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/one"
+        android:title="Select Payment Type" />
+    <item
+        android:id="@+id/menurecharge"
+        android:title="Recharge"/>
+    <item
+        android:id="@+id/menubkash"
+        android:title="Bkash"/>
+    <item
+        android:id="@+id/menurocket"
+        android:title="Rocket"/>
+    <item
+        android:id="@+id/menunagad"
+        android:title="Nagad"/>
+    <item
+        android:id="@+id/menubitcoin"
+        android:title="Bitcoin "/>
+    <item
+        android:id="@+id/menulitecoin"
+        android:title="Litecoin  "/>
+
+</menu>

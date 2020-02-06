@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.learnearning.learnnnge">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        tools:replace="android:icon"
+        android:allowBackup="true"
+        android:icon="@drawable/appiconle"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/appiconle"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.learnearning.learnnnge.Main3Activity"></activity>
+        <activity
+            android:name="com.learnearning.learnnnge.SplashActivity"
+            android:theme="@style/AppTheme.noTitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.learnearning.learnnnge.Main2Activity"></activity>
+        <activity android:name="com.learnearning.learnnnge.LeaderboardActivity" />
+        <activity
+            android:name="com.learnearning.learnnnge.HowtouserActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.noTitle" />
+        <activity android:name="com.learnearning.learnnnge.ContactusActivity" />
+        <activity
+            android:name="com.learnearning.learnnnge.TopListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.noTitle">
+        </activity>
+        <activity android:name="com.learnearning.learnnnge.HistoryActivity" />
+        <activity android:name="com.learnearning.learnnnge.LoginActivity" />
+        <activity android:name="com.learnearning.learnnnge.CaswOutActivity" />
+        <activity
+            android:name="com.learnearning.learnnnge.ReferActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.noTitle" />
+        <activity android:name="com.learnearning.learnnnge.SessionActivity" />
+        <activity android:name="com.learnearning.learnnnge.AcountBockActivity" />
+        <activity android:name="com.learnearning.learnnnge.QuizActivity" />
+        <activity android:name="com.learnearning.learnnnge.ForgotActivity" />
+        <activity android:name="com.learnearning.learnnnge.MainActivity" />
+        <activity
+            android:name="com.learnearning.learnnnge.HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.noTitle" />
+        <activity android:name="com.learnearning.learnnnge.RegisterActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9458920254224727~2695565195" />
+    </application>
+</manifest>

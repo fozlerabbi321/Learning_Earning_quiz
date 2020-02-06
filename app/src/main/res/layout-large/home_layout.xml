@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="9"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_weight=".8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+        </com.google.android.material.appbar.AppBarLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="2.4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:layout_width="227dp"
+            android:layout_height="244dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/back">
+
+            <TextView
+                android:id="@+id/tvyourpoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Your Points"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvpoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvyourpoints"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:textColor="#F5ECEC"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/layoutcashpoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/cashoutbutton"
+                android:gravity="center"
+                android:text="CashOut"
+                android:textAllCaps="false"
+                android:textColor="#F5ECEC"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="227dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#0DB9CE"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tvrefercode"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refer Code"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tvrefer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F5ECEC"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tvrefercode"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/layoutrefer"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/referlistbtn"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="Refer List"
+                android:textAllCaps="false"
+                android:textColor="#F5ECEC"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="2.4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="227dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#0DB9CE"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvearnpoint"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Earn Point"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                />
+            <ImageView
+                android:src="@drawable/start"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tvearnpoint"
+                android:layout_marginTop="5dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/layoutstart"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/startbtn"
+                android:text="Start"
+                android:textAllCaps="false"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#F5ECEC"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="227dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="match_parent"
+            android:background="#0DB9CE"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tvhowtouse"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How To Use"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:src="@drawable/howtouse"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tvhowtouse"
+                android:layout_marginTop="5dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/layouthowtouse"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/howtousebtn"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="How to use"
+                android:textAllCaps="false"
+                android:textColor="#F5ECEC"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="2.4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:layout_width="227dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="#0DB9CE">
+
+            <TextView
+                android:id="@+id/tvtotalstat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Total Stat's"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/tvtotalstat"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/statistics" />
+
+            <TextView
+                android:id="@+id/layoutpointstat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/statisticsbtn"
+                android:gravity="center"
+                android:text="Statistics"
+                android:textAllCaps="false"
+                android:textColor="#F5ECEC"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="227dp"
+            android:layout_height="match_parent"
+            android:background="#0DB9CE"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tvyoutube"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Youtube"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:src="@drawable/subscribe"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tvyoutube"
+                android:layout_marginTop="5dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/layoutyoutube"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/subscribebtn"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="Subscribe"
+                android:textAllCaps="false"
+                android:textColor="#F5ECEC"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/mainhomebtn"
+            android:text="Home"
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:textColor="#F1ECEC"
+            android:background="#3C1D77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/mainearnmoney"
+            android:text="Earn Money"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:textColor="#F1ECEC"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:background="#671075"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/maintoplist"
+            android:text="TopList"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:textColor="#F1ECEC"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:background="#3C77A7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

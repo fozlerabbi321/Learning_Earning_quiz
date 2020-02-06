@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="8"
+    android:background="@drawable/bg"
+    tools:context=".QuizActivity">
+
+
+  <RelativeLayout
+      android:layout_weight=".6"
+      android:layout_width="match_parent"
+      android:layout_height="0dp">
+
+    <TextView
+        android:id="@+id/quizno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz No:"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="#DB3434"
+        android:textStyle="bold"
+        />
+  </RelativeLayout>
+
+  <LinearLayout
+      android:layout_weight="1.4"
+      android:layout_width="match_parent"
+      android:layout_height="0dp">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:text=" how old are you and are you?"
+        android:textSize="27dp" />
+  </LinearLayout>
+  <RelativeLayout
+      android:layout_weight="3"
+      android:layout_width="match_parent"
+      android:layout_height="0dp">
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        >
+      <RadioButton
+          android:id="@+id/radioButton"
+          android:textColor="#fff"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="false"
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="5dp"
+          android:text="Male"
+          android:textSize="20dp" />
+
+      <RadioButton
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="5dp"
+          android:id="@+id/radioButton2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="false"
+          android:textColor="#fff"
+
+          android:text="Female"
+          android:textSize="20dp" />
+
+      <RadioButton
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="5dp"
+          android:id="@+id/radioButton3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="false"
+          android:text="Female"
+          android:textColor="#fff"
+
+          android:textSize="20dp" />
+
+      <RadioButton
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="5dp"
+          android:id="@+id/radioButton4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="false"
+          android:textColor="#fff"
+
+          android:text="Female"
+          android:textSize="20dp" />
+    </RadioGroup>
+
+  </RelativeLayout>
+
+
+  <RelativeLayout
+      android:layout_weight="1"
+      android:layout_width="match_parent"
+      android:layout_height="0dp">
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="130dp"
+        android:background="#9D2FB6"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="30dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:text="Submit" />
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:layout_weight="1"
+      android:layout_width="match_parent"
+      android:layout_height="0dp">
+    <TextView
+        android:id="@+id/showid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        />
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:layout_weight="1"
+      android:layout_width="match_parent"
+      android:layout_height="0dp">
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/qadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/bannerads">
+    </com.google.android.gms.ads.AdView>
+  </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".HowtouserActivity">
+    <RelativeLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:background="#32A1C5"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms and Rules"
+            android:textSize="27dp"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            />
+        <View
+            android:layout_width="7dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="2dp"
+            android:background="#000"
+            />
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_marginBottom="7dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnbangla"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="60dp"
+                android:background="#527059"
+                android:text="Bangla"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="25dp" />
+            <Button
+                android:id="@+id/btnenglish"
+                android:layout_alignParentRight="true"
+                android:layout_width="123dp"
+                android:text="English"
+                android:layout_marginLeft="60dp"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:textSize="25dp"
+                android:layout_height="wrap_content"
+                android:background="#6DD521"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/tvuse"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAllCaps="false"
+            android:background="#000"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_weight="6"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvbangla"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            />
+    </ScrollView>
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="#000"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/tvfbpage"
+            android:text="FB Page"
+            android:textSize="18dp"
+            android:layout_alignParentBottom="true"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:textColor="#F1ECEC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvfbgroup"
+            android:text="FB Group"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:textColor="#F1ECEC"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tvytchannel"
+            android:text="YT Channel"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:textColor="#F1ECEC"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

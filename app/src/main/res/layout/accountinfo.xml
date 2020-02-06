@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvacountname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Name "
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textIsSelectable="true"
+            android:textSize="18dp"
+            />
+        <TextView
+            android:id="@+id/tvacountemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Email: "
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textIsSelectable="true"
+            android:textSize="18dp"
+            />
+        <TextView
+            android:id="@+id/tvacountmobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Mobile Number:"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textIsSelectable="true"
+            android:textSize="18dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#15EB9C"/>
+
+    <Button
+        android:id="@+id/accubtngotit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:text="Got It!"
+        android:textAllCaps="false"
+        android:textColor="#15EB9C"
+        android:textSize="25dp" />
+
+</LinearLayout>
